@@ -12,13 +12,14 @@
 
 ```text
 .
-├── README.md               # 本ガイド（全体手順書）
+├── README.md               # 全体概要・環境構築ガイド
+├── HANDS_ON.md             # 本ガイド（ハンズオン進行手順書）
 ├── docs/
-│   ├── game_rules.md       # ゲーム「2048」のルール解説
-│   ├── design_spec.md      # 詳細設計書 兼 ロジック仕様書
-│   ├── pytest_manual.md    # pytest クイックマニュアル
+│   ├── game_rules.md       # ゲーム「2048」のルール解説（移動・結合・スコア）
+│   ├── design_spec.md      # 詳細設計書 兼 ロジック仕様書（アーキテクチャ・シーケンス・API）
+│   ├── pytest_manual.md    # pytest クイックマニュアル（書き方・モック・コマンド）
 │   └── worksheets/
-│       └── test_design_worksheet.md  # テスト設計ワークシート
+│       └── test_design_worksheet.md  # テスト設計ワークシート（各Session演習用）
 ├── src/                    # テスト対象のプログラム（ドメインロジック）
 │   ├── board_logic.py
 │   ├── tile_generator.py
