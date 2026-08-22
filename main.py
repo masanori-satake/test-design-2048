@@ -1,6 +1,7 @@
 """
 2048ゲームエントリーポイント。
 """
+
 import tkinter as tk
 from src.gui import Game2048GUI
 

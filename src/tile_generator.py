@@ -1,8 +1,10 @@
 """
 空きマスへの新しいタイル生成ロジックを担当するモジュール。
 """
+
 import random
 import copy
+
 
 def spawn_tile(board: list[list[int]]) -> list[list[int]]:
     """
