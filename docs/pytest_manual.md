@@ -7,7 +7,7 @@ Pythonのテストフレームワーク `pytest` の文法で迷って時間を�
 
 ## 1. 基本形（Arrange-Act-Assert）
 
-`pytest` では、`test_` で始まるファイル名および関数名を作成し、Python標準の `assert` 文で結果を検証します。
+`pytest` では、`test_*.py` または `*_test.py` にマッチするファイル内の `test` で始まる関数やメソッド（および `__init__` を持たない `Test` で始まるクラス）が自動的に収集・実行されます。結果の検証には Python 標準の `assert` 文を使用します。
 
 ```python
 # テスト対象の関数（例: 温度計算機）
