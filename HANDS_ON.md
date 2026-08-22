@@ -14,16 +14,16 @@
 .
 ├── README.md               # 本ガイド（全体手順書）
 ├── docs/
-│   ├── game_rules.md       # ゲーム「2048」のルール＆結合仕様解説
+│   ├── game_rules.md       # ゲーム「2048」のルール解説
 │   ├── design_spec.md      # 詳細設計書 兼 ロジック仕様書
-│   ├── pytest_manual.md    # pytest クイック書き方マニュアル
+│   ├── pytest_manual.md    # pytest クイックマニュアル
 │   └── worksheets/
-│       └── test_design_worksheet.md  # 受講生用テスト設計ワークシート
+│       └── test_design_worksheet.md  # テスト設計ワークシート
 ├── src/                    # テスト対象のプログラム（ドメインロジック）
 │   ├── board_logic.py
 │   ├── tile_generator.py
 │   └── game_manager.py
-└── tests/                  # 受講生がテストコードを記述する領域
+└── tests/                  # テストコードを記述する領域
     ├── test_board_logic.py
     ├── test_tile_generator.py
     └── test_game_manager.py
