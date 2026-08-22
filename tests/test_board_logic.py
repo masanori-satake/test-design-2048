@@ -3,8 +3,7 @@ tests/test_board_logic.py
 src/board_logic.py に対するテストコード。
 Session 1 & 2 で受講生がテストケースを拡張・完成させます。
 """
-
-from src.board_logic import is_board_full
+from src.board_logic import is_board_full, slide_and_merge_line
 
 
 def test_is_board_full_returns_true_when_full():
