@@ -26,15 +26,20 @@
 
 ### 前提条件
 * Python 3.10 以上
+* Linux（Ubuntu/Debian等）でGUI環境を動かす場合は、Tkinterパッケージ（`python3-tk`）が必要です：
+  ```bash
+  sudo apt-get install python3-tk
+  ```
 
 ### 1. 仮想環境の作成と有効化
 ```bash
-python3 -m venv venv
-
 # Linux / macOS の場合
+python3 -m venv venv
 source venv/bin/activate
 
-# Windows (PowerShell) の場合
+# Windows の場合 (PowerShell / Command Prompt)
+py -3 -m venv venv
+# または: python -m venv venv
 .\venv\Scripts\Activate.ps1
 ```
 
@@ -58,7 +63,7 @@ pytest
 pytest -v
 
 # カバレッジ測定付きで実行 (Session 6)
-pytest --cov=src --cov-report=term-missing
+pytest --cov=src --cov-branch --cov-report=term-missing
 ```
 
 ---

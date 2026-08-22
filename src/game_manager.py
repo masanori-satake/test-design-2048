@@ -1,9 +1,7 @@
 """
 ゲームの進行管理、ゲームオーバー判定を担当するモジュール。
 """
-
 from src.board_logic import is_board_full
-
 
 def is_game_over(board: list[list[int]]) -> bool:
     """

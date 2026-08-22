@@ -2,7 +2,6 @@
 2048の盤面およびスライド・合成ロジックを担当するモジュール。
 """
 
-
 def slide_and_merge_line(line: list[int]) -> tuple[list[int], int]:
     """
     1行分（長さ4）のスライドと合成処理を行い、(新しい行, 獲得スコア) を返す純粋関数。
@@ -13,6 +12,9 @@ def slide_and_merge_line(line: list[int]) -> tuple[list[int], int]:
     - 連鎖合成を防ぐ（例: [2, 2, 2, 2] -> [4, 4, 0, 0], スコア: 8）。
     - 合成された数値の合計値が得点（獲得スコア）として加算される。
     """
+    if len(line) != 4:
+        raise ValueError("line must contain exactly 4 cells")
+
     # 0を取り除いた要素のリストを作成
     non_zero = [x for x in line if x != 0]
 

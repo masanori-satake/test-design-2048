@@ -2,7 +2,6 @@
 2048ゲームのTkinter GUI描画およびキー入力ハンドラ。
 GUI層は描画とキー操作に特化し、ゲームロジックは src/ の各モジュールを呼び出す。
 """
-
 import tkinter as tk
 from tkinter import messagebox
 from src.board_logic import slide_and_merge_line
@@ -163,6 +162,4 @@ class Game2048GUI:
             self._update_ui()
 
             if is_game_over(self.board):
-                messagebox.showinfo(
-                    "Game Over", f"Game Over!\nFinal Score: {self.score}"
-                )
+                messagebox.showinfo("Game Over", f"Game Over!\nFinal Score: {self.score}")

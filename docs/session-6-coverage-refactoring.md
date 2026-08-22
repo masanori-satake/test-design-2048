@@ -1,7 +1,7 @@
 # Session 6: コード網羅率（カバレッジ）とリファクタリング
 
 ## 1. 学習目的
-* `pytest-cov` を用いて C1 (Branch Coverage / 分岐網羅) や C0 (Statement Coverage / 声明網羅) を測定・分析する。
+* `pytest-cov` を用いて C1 (Branch Coverage / 分岐網羅) や C0 (Statement Coverage / 命令網羅) を測定・分析する。
 * カバレッジ100%の意味と限界（「カバレッジ100%＝バグゼロ」ではないこと）を理解する。
 * 充実したユニットテストをセーフティネットにして、安心してコードのリファクタリングを行う体験をする。
 
@@ -13,7 +13,7 @@
 1. **カバレッジの測定**:
    * 以下のコマンドを実行し、`src/` 配下の各モジュールのカバレッジ率を確認します。
      ```bash
-     pytest --cov=src --cov-report=term-missing
+     pytest --cov=src --cov-branch --cov-report=term-missing
      ```
 2. **未通過ルートの検出とテスト追加**:
    * レポートで指摘された未通過行（Missing Lines）を確認し、その条件を通るテストを追加します。
