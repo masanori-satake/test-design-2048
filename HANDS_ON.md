@@ -58,7 +58,7 @@ flowchart LR
 
 #### 実習課題
 
-1. `docs/worksheets/participant_test_design_worksheet.md` の **Section 1** を埋めてください。
+1. `docs/worksheets/participant_test_design_worksheet.md` の **Session 1** を埋めてください。
 * 1行（`line`）の入力における「有効同値」「無効同値」を整理する。
 * 「1移動1合成の原則（連鎖しない）」を網羅するテスト条件を整理する。
 
@@ -76,7 +76,7 @@ flowchart LR
 
 #### 実習課題
 
-1. `docs/worksheets/participant_test_design_worksheet.md` の **Section 2** を埋めてください。
+1. `docs/worksheets/participant_test_design_worksheet.md` の **Session 2** を埋めてください。
 * ゲームオーバーを判定する3つの因子（空きマス・水平合成・垂直合成）を抽出する。
 * 8パターンの条件組み合わせ（デシジョンテーブル）を作成し、期待値を記入する。
 
@@ -94,7 +94,7 @@ flowchart LR
 
 #### 実習課題
 
-1. `docs/worksheets/participant_test_design_worksheet.md` の **Section 3** を埋めてください。
+1. `docs/worksheets/participant_test_design_worksheet.md` の **Session 3** を埋めてください。
 * 盤面の状態（初期・途中・満杯・詰み）とイベント（移動操作・タイル生成）の遷移図/表を作成する。
 
 
