@@ -41,19 +41,19 @@ Session 6の学習目的「カバレッジ100%＝バグゼロではないこと�
 ```mermaid
 flowchart TD
     A["入力配列のスライド・合成"] --> B{"len(merged) の値は？"}
-    
+
     B -->|3| C["merged.append(0)"]
     C --> Z["カバレッジ計測: 通過済"]
-    
+
     B -->|2| D["merged.extend([0, 0])"]
     D --> Z
-    
+
     B -->|4| E["pass"]
     E --> Z
-    
+
     B -->|"1 または 0"| F["実装が存在しない<br>（テストケースも無い）"]
     F -.-> Y["カバレッジ計測器からは<br>見えない死角（Omission Bug）"]
-    
+
     style F fill:#f99,stroke:#f33,stroke-dasharray: 5 5
     style Y fill:#f99,stroke:#f33,stroke-dasharray: 5 5
     style Z fill:#9f9,stroke:#333

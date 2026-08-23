@@ -39,4 +39,3 @@ def is_board_full(board: list[list[int]]) -> bool:
     """
     # ジェネレータ式と any() で早期リターンするPythonicな実装
     return not any(0 in row for row in board)
-
