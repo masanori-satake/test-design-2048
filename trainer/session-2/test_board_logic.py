@@ -21,6 +21,6 @@ def test_slide_and_merge_line_valid(test_id, line, expected_new_line, expected_s
 
 
 def test_slide_and_merge_line_invalid_length():
-    """TC-S1-07: 無効同値：配列長エラー"""
+    """TC-S1-07: 無効同値: 配列長エラー"""
     with pytest.raises(ValueError):
         slide_and_merge_line([2, 2, 2])
