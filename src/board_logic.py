@@ -17,7 +17,10 @@ def slide_and_merge_line(line: list[int]) -> tuple[list[int], int]:
         raise ValueError("line must contain exactly 4 cells")
 
     # 0を取り除いた要素のリストを作成
-    non_zero = [x for x in line if x != 0]
+    non_zero = []
+    for i in range(len(line)):
+        if line[i] != 0:
+            non_zero.append(line[i])
 
     merged = []
     score = 0
@@ -33,7 +36,7 @@ def slide_and_merge_line(line: list[int]) -> tuple[list[int], int]:
             i += 1
 
     # 残りを0で埋めて長さ4にする
-    while len(merged) < len(line):
+    while len(merged) < 4:
         merged.append(0)
 
     return merged, score
@@ -46,7 +49,8 @@ def is_board_full(board: list[list[int]]) -> bool:
     :param board: 4x4などの2次元配列
     :return: 空きマスがない場合は True、空きマス（0）が存在する場合は False
     """
-    for row in board:
-        if 0 in row:
-            return False
+    for i in range(len(board)):
+        for j in range(len(board[i])):
+            if board[i][j] == 0:
+                return False
     return True
