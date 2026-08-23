@@ -71,6 +71,7 @@ pytest --cov=src --cov-branch --cov-report=term-missing
 ## ドキュメント構成 (`docs/`)
 各セッションの教材・ガイドラインは `docs/` ディレクトリに配置されています。セッションの進行に合わせて参照・実行してください。
 
+* `docs/HANDS_ON.md` （ハンズオン全体の進行手順書・大まかな流れ）
 * `docs/session-1-introduction.md`
 * `docs/session-2-boundary-values.md`
 * `docs/session-3-mocks-and-stubs.md`
