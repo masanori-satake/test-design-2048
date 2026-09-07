@@ -1,4 +1,5 @@
 import pytest
+
 from src.game_manager import is_game_over
 
 
