@@ -1,4 +1,5 @@
 import pytest
+
 from src.board_logic import slide_and_merge_line
 
 
