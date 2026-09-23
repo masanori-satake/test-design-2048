@@ -1,4 +1,5 @@
 from unittest.mock import patch
+
 from src.tile_generator import spawn_tile
 
 

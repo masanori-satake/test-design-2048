@@ -5,9 +5,10 @@ GUI層は描画とキー操作に特化し、ゲームロジックは src/ の�
 
 import tkinter as tk
 from tkinter import messagebox
+
 from src.board_logic import slide_and_merge_line
-from src.tile_generator import spawn_tile
 from src.game_manager import is_game_over
+from src.tile_generator import spawn_tile
 
 CELL_COLORS = {
     0: "#CDC1B4",
